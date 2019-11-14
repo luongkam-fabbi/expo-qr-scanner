@@ -1,0 +1,103 @@
+const BACKGROUND_PRIMARY_COLOR = '#1C1C25';
+const DARK_1_COLOR = '#31313F';
+const DARK_2_COLOR = 'rgba(49, 49, 63, 0.5)';
+const DRAK_3_COLOR = '#1B2123';
+const DRAK_3_COLOR_A_80 = 'rgba(27, 33, 35, 0.8)';
+const DRAK_4_COLOR = '#1A2021';
+const DRAK_4_COLOR_A_75 = 'rgba(26, 32, 33, 0.75)';
+const DRAK_4_COLOR_A_85 = 'rgba(26, 32, 33, 0.85)';
+const DRAK_5_COLOR = '#757575';
+const DRAK_6_COLOR = '#333333';
+const COLOR_BLUE = '#4FB1EA';
+const COLOR_BLUE_A_20 = 'rgba(79, 177, 234, 0.2)'
+const COLOR_BLUE_1 = '#71C5F4';
+const COLOR_BLUE_2 = '#4A66AD';
+const COLOR_BLUE_3 = '#6BAAE9';
+const COLOR_BLUE_4 = '#0071BC';
+const COLOR_PINK = '#EB82F4';
+const COLOR_PINK_A_80 = 'rgba(235, 130, 244, 0.8)';
+const COLOR_PINK_A_10 = 'rgba(235, 130, 244, 0.1)'
+const COLOR_PINK_1 = '#e983f4';
+const COLOR_WHITE = '#fff';
+const COLOR_WHITE_2 = '#f2f2f2';
+const COLOR_BACK = '#000';
+const COLOR_RED = '#C1523F';
+const COLOR_RED_1 = '#FB2C56';
+const COLOR_RED_2 = '#ce395f';
+const COLOR_RED_3 = '#ed1c24';
+const COLOR_GREEN = '#53B635';
+const COLOR_GREEN_1 = '#CFF9D4';
+const COLOR_GREEN_2 = '#22b573';
+const ORANGE_COLOR = '#F15A24';
+const GRAY_COLOR = '#CCCCCC';
+const GRAY_COLOR_0 = '#707070';
+const GRAY_COLOR_1 = '#454548';
+const GRAY_COLOR_2 = '#808080';
+const GRAY_COLOR_3 = '#E6E6E6';
+const GRAY_COLOR_3_A = 'rgba(230, 230, 230, 0.25)';
+const GRAY_COLOR_4 = '#666666';
+const GRAY_COLOR_5 = '#30363D';
+const GRAY_COLOR_6 = '#999999';
+const GRAY_COLOR_6_A = 'rgba(153, 153, 153, 0.5)';
+const GRAY_COLOR_7 = '#606060';
+const GRAY_COLOR_8 = '#86bc25';
+const GRAY_COLOR_9 = '#7c8091';
+const GRAY_COLOR_10 = '#b3b3b3';
+const GRAY_COLOR_11 = '#8E8E8F';
+const TRANSPARENT = 'rgba(0, 0, 0, 0)';
+const BLACK = '#000000';
+const BLACK_A_06 = 'rgba(0, 0, 0, 0.6)';
+const BLACK_A_04 = 'rgba(0, 0, 0, 0.4)';
+
+export default {
+  BACKGROUND_PRIMARY_COLOR,
+  ORANGE_COLOR,
+  GRAY_COLOR,
+  GRAY_COLOR_0,
+  GRAY_COLOR_1,
+  GRAY_COLOR_2,
+  GRAY_COLOR_3,
+  GRAY_COLOR_3_A,
+  GRAY_COLOR_4,
+  GRAY_COLOR_5,
+  GRAY_COLOR_6,
+  GRAY_COLOR_6_A,
+  GRAY_COLOR_7,
+  GRAY_COLOR_8,
+  GRAY_COLOR_9,
+  GRAY_COLOR_10,
+  GRAY_COLOR_11,
+  COLOR_WHITE,
+  COLOR_WHITE_2,
+  COLOR_BACK,
+  COLOR_BLUE,
+  COLOR_BLUE_A_20,
+  COLOR_BLUE_1,
+  COLOR_BLUE_2,
+  COLOR_BLUE_3,
+  COLOR_BLUE_4,
+  COLOR_PINK,
+  COLOR_PINK_A_80,
+  COLOR_PINK_A_10,
+  COLOR_PINK_1,
+  COLOR_RED,
+  COLOR_RED_1,
+  COLOR_RED_2,
+  COLOR_RED_3,
+  COLOR_GREEN,
+  COLOR_GREEN_1,
+  COLOR_GREEN_2,
+  DARK_1_COLOR,
+  DARK_2_COLOR,
+  DRAK_3_COLOR,
+  DRAK_3_COLOR_A_80,
+  DRAK_4_COLOR,
+  DRAK_4_COLOR_A_75,
+  DRAK_4_COLOR_A_85,
+  DRAK_5_COLOR,
+  DRAK_6_COLOR,
+  TRANSPARENT,
+  BLACK,
+  BLACK_A_06,
+  BLACK_A_04,
+};

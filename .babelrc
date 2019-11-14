@@ -1,0 +1,22 @@
+{
+	"presets": ["babel-preset-expo"],
+	"env": {
+		"development": {
+			"plugins": ["inline-dotenv"]
+		},
+		"production": {
+			"plugins": ["transform-remove-console", "inline-dotenv"]
+		}
+	},
+	"plugins": [
+		"inline-dotenv",
+		["module-resolver", {
+			"root": ["./"],
+			"alias": {
+				"assets": "./assets",
+				"src": "./src",
+				"~": "./src",
+			}
+		}]
+	]
+}
