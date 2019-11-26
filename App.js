@@ -1,7 +1,5 @@
 import React from 'react';
 import {
-  Platform,
-  StatusBar,
   View,
   StyleSheet,
 } from 'react-native';
@@ -15,8 +13,8 @@ import createSagaMiddleware from 'redux-saga';
 import AppNavigator from './src/navigations/AppNavigator';
 import reducer from './src/reducers';
 import rootSaga from './src/sagas';
-import commonStyles from './assets/styles/utils';
-import Colors from './src/constants/colors.js';
+import Home from './src/screens/Home'
+import QRScanner from './src/screens/QRScanner'
 
 const styles = StyleSheet.create({
   animationContainer: {
@@ -64,12 +62,12 @@ export default class App extends React.Component {
     return Promise.all([
       Font.loadAsync({
         ...Icon.Ionicons.font,
-        'Arial': require('./assets/fonts/Arial.ttf'),
-        'Arial-Bold': require('./assets/fonts/Arial-Bold.ttf'),
-        'hirakakupro-w3': require('./assets/fonts/hirakakupro-w3.otf'),
-        'space-mono': require('./assets/fonts/SpaceMono-Regular.ttf'),
-        'Roboto': require("native-base/Fonts/Roboto.ttf"),
-        'Roboto_medium': require("native-base/Fonts/Roboto_medium.ttf"),
+        // 'Arial': require('./assets/fonts/Arial.ttf'),
+        // 'Arial-Bold': require('./assets/fonts/Arial-Bold.ttf'),
+        // 'hirakakupro-w3': require('./assets/fonts/hirakakupro-w3.otf'),
+        // 'space-mono': require('./assets/fonts/SpaceMono-Regular.ttf'),
+        // 'Roboto': require("native-base/Fonts/Roboto.ttf"),
+        // 'Roboto_medium': require("native-base/Fonts/Roboto_medium.ttf"),
       }),
     ]);
   };
@@ -80,7 +78,7 @@ export default class App extends React.Component {
 
   _handleFinishLoading = () => {
     this.setState({ isLoadingComplete: true }, () => {
-      this.animation.play();
+      // this.animation.play();
     });
   };
 
@@ -96,17 +94,9 @@ export default class App extends React.Component {
     } else {
       return (
         <>
-          <View style={[commonStyles.bgContainer, commonStyles.flex1]}>
-            {
-              Platform.OS === 'ios' && (
-                <React.Fragment>
-                  {/* <SafeAreaView style={{backgroundColor: Colors.TRANSPARENT }} /> */}
-                  <StatusBar backgroundColor={Colors.TRANSPARENT} barStyle="light-content" />
-                </React.Fragment>
-              )
-            }
+          <View style={[]}>
             <Provider store={this.store}>
-              <AppNavigator />
+              <QRScanner />
             </Provider>
           </View>
         </>

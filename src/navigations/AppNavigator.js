@@ -2,16 +2,19 @@ import {
   createAppContainer,
   createSwitchNavigator,
 } from 'react-navigation';
-  
-import HomeTabNavigator from './HomeTabNavigator';
+import { SC_SCANNER, SC_HOME } from "../constants/screens";
+import SCScanner from '../screens/QRScanner'
+import SCHome from '../screens/Home'
 
-const HOME = "home";
+// import HomeTabNavigator from './HomeTabNavigator';
+
+
 
 export default createAppContainer(
   createSwitchNavigator({
     // Login: LoginTabNavigator,
-    HOME: HomeTabNavigator,
-  }, {
-    initialRouteName: HOME,
+    [SC_SCANNER]: {screen: SCScanner},
+    // [SC_HOME]: HomeTabNavigator,
+    [SC_HOME]: { screen: SCHome },
   })
 );
